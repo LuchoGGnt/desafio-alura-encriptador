@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    /*Fuente*/
+    font-family: "Inter";
+
+    /*Color de fondo*/
+    background-color: #e3eaf5;
+
+    margin: 0;
+
+    /*Propiedades de posición*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+/*---------------------ÁREA IZQUIERDA---------------------*/
+.area-izquierda {
+    margin-top: 30px;
+
+    /*Modelo de caja*/
+    padding: 20px;
+
+    /*Maquetación*/
+    display: flex;
+    flex-direction: column;
+
+    /*Alineación de contenido*/
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: auto;
+
+    & .img-logo {
+        align-self: flex-start;
+        margin-top: 0;
+    }
+}
+
+/*---------------------ÁREA CENTRAL---------------------*/
+.area-central {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 80px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+#input_text {
+    /*Modelo de caja*/
+    width: 680px;
+    height: 500px;
+    
+    position: relative;
+    margin-top: 168px;
+
+    /*Color de fondo*/
+    background: rgba(0 0 0 / 0);
+
+    border: 0;
+    outline: none;
+    resize: none;
+
+    /*Fuente*/
+    font-family: "Inter";
+    font-size: 32px;
+    color: #0A3871;
+}
+#input_text::placeholder {
+    color: #0A3871;
+}
+
+.aviso {
+    color: #495057;
+
+    /*Maquetación*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 20px;
+
+    & .icono-aviso {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+
+        width: 16px;
+        height: 16px;
+
+        margin-right: 8px;
+    }
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-family: "Inter";
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+
+    & .boton-izquierdo, .boton-derecho {
+        width: 328px;
+        height: 67px;
+        border-radius: 24px;
+        border: 2px solid #0A3871;
+    }
+
+    & .boton-izquierdo {
+        color: #ffffff;
+        background: #0A3871;
+    }
+}
+
+/*---------------------ÁREA DERECHA---------------------*/
+.area-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.rectangulo-contenedor {
+    width: 400px;
+    height: 800px;
+    border-radius: 32px;
+    background-color: #FFF;
+    box-shadow: 0 16px 24px rgba(0 0 0 / 0.2);
+
+    /*Modelo de caja*/
+    padding: 20px;
+    position: relative;
+
+    /*Maquetación*/
+    display: flex;
+    flex-direction: column;
+
+    /*Alineación de contenido*/
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.informacion-adicional {
+    height: 112px;
+    width: 336px;
+    gap: 16px;
+    margin-top: auto;
+
+    & .imagen-relleno {
+        margin-bottom: 32px;
+    }
+
+    & .parrafo-no-encontrado {
+        color: #343A40;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    & .instruccion {
+        color: #495057;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+.parrafo-encriptado {
+    font-family: "Inter";
+    font-size: 24px;
+    color: #495057;
+    
+    width: 336px;
+    height: auto;
+
+    max-height: 200px;
+    overflow-y: auto;
+
+    border: none;
+    resize: none;
+    
+    overflow: hidden;
+}
+
+.boton-copiar {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter";
+    font-size: 16px;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    border: 2px solid #0A3871;
+    background: #FFF;
+    align-items: center;
+    position: absolute;
+    margin-top: 92px;
+    
+    bottom: 31px;
+}
+
+#copiar {
+    display: none; /* Ocultar el botón por defecto */
+}

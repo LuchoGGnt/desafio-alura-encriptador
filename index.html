@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <main>
+        <!-- DIV Logo -->
+        <div class="area-izquierda">
+            <img class="img-logo" src="assets/Logo.png" alt="Logo de Alura">
+        </div>
+
+        <!-- DIV Área de texto, aviso y botones -->
+        <div class="area-central">
+            <!-- Área de texto -->
+            <textarea name="input_text" id="input_text" placeholder="Ingrese el texto aquí"></textarea>
+
+            <!-- Aviso -->
+            <div class="aviso">
+                <img class="icono-aviso" src="assets/exclamation_icon.png" alt="Icono de exclamacion">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <!-- Botones -->
+            <div class="botones">
+                <button class="boton-izquierdo" onclick="encriptar()">Encriptar</button>
+                <button class="boton-derecho" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <!-- DIV Texto mostrado -->
+        <div class="area-derecha">
+            <div class="rectangulo-contenedor">
+                <div class="contenedor-texto-encriptado">
+                    <p id="texto-encriptado" class="parrafo-encriptado"></p>
+                </div>
+
+                <div id="contenido-predeterminado">
+                    <img class="imagen-relleno" src="assets/Muñeco.png" alt="Imagen de una mujer observando un diamante con una lupa">
+                    
+                    <div class="informacion-adicional">
+                        <p class="parrafo-no-encontrado">Ningún mensaje fue encontrado</p>
+                        <p class="instruccion">Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+
+                    <button id="copiar" onclick="copiar();" class="boton-copiar">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
